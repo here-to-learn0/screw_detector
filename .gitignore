@@ -1,5 +1,6 @@
 #dataset files
 *.png
+screws/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
