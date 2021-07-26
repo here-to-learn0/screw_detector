@@ -14,13 +14,13 @@ def take_photo(name):
     camera = PiCamera()
     camera.start_preview()
     sleep(5)
-    camera.capture("snap/" + name + ".jpg")
+    camera.capture("dataset/snap/" + name + ".jpg")
     camera.stop_preview()
 
 def take_video(name):
     camera = PiCamera()
     camera.start_preview()
-    camera.start_recording('video/' + name +'.h264')
+    camera.start_recording('dataset/video/' + name +'.h264')
     #will take video for 60 secs 
     sleep(5)
     camera.stop_recording()
